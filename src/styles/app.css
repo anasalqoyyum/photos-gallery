@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif !important;
+  transition: ease;
+}
+
+.gambar-gallery {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.container-gallery {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.gambar-gallery:hover .overlay,
+.gambar-gallery:focus {
+  opacity: 25%;
+}
+
+.gambar-gallery .overlay {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: #111827;
+
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.image-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.image {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+}
